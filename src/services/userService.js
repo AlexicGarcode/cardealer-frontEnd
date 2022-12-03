@@ -8,8 +8,19 @@ const configHeader = {
   },
 };
 
-export const verifyingTokenService = async () => {
-  const response = await axios.get(URL, configHeader);
 
-  return response.data;
+export const signupService = async (data) =>{
+  const resp = await axios.post(URL, data);
+  return resp.data;
+}
+
+export const getUserService = async(uid)=>{
+  console.log(uid);
+  const resp = await axios.get(`${URL}/${uid}`, configHeader);
+  return resp.data;
+}
+
+export const verifyingTokenService = async () => {
+  const result = await axios.get(`${URL}`, configHeader);  
+  return result.data;
 };

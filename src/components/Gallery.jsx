@@ -5,7 +5,7 @@ const Gallery = () => {
     <>
       <div
         id="carouselExampleIndicators"
-        className="carousel slide"
+        className="carousel slide w-100 m-auto"
         data-bs-ride="true"
       >
         <div className="carousel-indicators">
