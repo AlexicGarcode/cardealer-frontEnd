@@ -1,11 +1,12 @@
 import React from 'react'
+import './gallery-styles.css'
 
 const Gallery = () => {
   return (
     <>
       <div
         id="carouselExampleIndicators"
-        className="carousel slide w-100 m-auto"
+        className="carousel slide h-100 w-100 m-auto"
         data-bs-ride="true"
       >
         <div className="carousel-indicators">

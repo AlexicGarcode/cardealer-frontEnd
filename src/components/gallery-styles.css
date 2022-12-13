@@ -1,0 +1,21 @@
+.carousel-item {
+    /* width:640px; */
+    height:360px;
+    /* object-fit: cover;
+    object-position: center;
+    overflow: hidden; */
+    
+    
+} 
+
+.carousel-item > img {
+    /* object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 100%;
+    width: 50%;
+    margin: auto; */
+    width: 50%;
+    aspect-ratio: 10/2;
+    object-fit: contain;
+} 
