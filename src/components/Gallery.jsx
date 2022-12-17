@@ -1,12 +1,11 @@
 import React from 'react'
-import './gallery-styles.css'
 
 const Gallery = () => {
   return (
     <>
       <div
         id="carouselExampleIndicators"
-        className="carousel slide h-100 w-100 m-auto"
+        className="carousel slide animate__animated animate__fadeIn"
         data-bs-ride="true"
       >
         <div className="carousel-indicators">
@@ -37,34 +36,32 @@ const Gallery = () => {
             aria-label="Slide 4"
           />
         </div>
-        <div className="carousel-inner">
+        <div className="carousel-inner text-center justify-content-center">
           <div className="carousel-item active">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Honda.svg/1200px-Honda.svg.png"
-              className="d-block w-100"
-              alt="Honda"
-            />
+          <img style={{width: '40%', height: 200, overflow: 'hidden', position: 'relative'}}  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Honda.svg/1200px-Honda.svg.png" classname="d-block w-100 "  alt="Honda" />
+
           </div>
           <div className="carousel-item">
             <img
+            style={{width: '40%', height: 200, overflow: 'hidden', position: 'relative'}} 
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Volkswagen_logo_2019.svg/1200px-Volkswagen_logo_2019.svg.png"
-              className="d-block w-100"
+              className="d-block w-100 "
               alt="VolksWagen"
             />
           </div>
           <div className="carousel-item">
             <img
+           style={{width: '40%', height: 200, overflow: 'hidden', position: 'relative'}} 
               src="https://upload.wikimedia.org/wikipedia/commons/9/94/ToyotaLogoRedVer.svg"
-              className="d-block w-100"
+              className="d-block w-100 "
               alt="Toyota"
             />
           </div>
           <div className="carousel-item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ford_Motor_Company_Logo.svg/1024px-Ford_Motor_Company_Logo.svg.png"
-              className="d-block w-100"
-              alt="Ford"
-            />
+        <img style={{width: '40%', height: 200, overflow: 'hidden', position: 'relative'}} 
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ford_Motor_Company_Logo.svg/1024px-Ford_Motor_Company_Logo.svg.png" 
+        classname="d-block w-100 " alt="Ford" />
+
           </div>
         </div>
         

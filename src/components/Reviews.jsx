@@ -1,5 +1,5 @@
 import React from 'react'
-import Usuario1 from '../img/Chase.jpg'
+import Usuario1 from '../assets/Chase.jpg'
 
 const Reviews = () => {
   return (
