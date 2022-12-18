@@ -4,6 +4,7 @@ import ModelContext from './ModelContext';
 import ModelReducer from './ModelReducer';
 import { getModelsPaginateService, getModelByIdService } from '../services/modelService';
 import { types } from '../types/types';
+import Swal from 'sweetalert2';
 
 
 const initialState = {
@@ -15,14 +16,32 @@ const initialState = {
   cart: [],
 };
 
+const alert = async ( icon, message) => {
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'center',
+    customClass: {
+      popup: 'colored-toast'
+    },
+    showConfirmButton: false,
+    timer: 2500
+  })
+
+  await Toast.fire({
+    icon: icon,
+    title: message
+  })
+}
+
 function ModelProvider({ children }) {
   const [modelState, dispatch] = useReducer(ModelReducer, initialState);
+
 
   const getModels = useCallback(
     async (page=1, limit=9 ) => {
       const data = {
         limit:limit, 
-        page: page
+        pag: page
       }
       
       try {
@@ -111,9 +130,11 @@ function ModelProvider({ children }) {
         type: types.ADD_MODEL_CART,
         payload: model,
       });
-      console.log('model añadido');
+
+      alert('success',`Carro ${res.model} añadido!`);
+
     }else{
-      console.log('model ya se encuentra añadido en el carrito');
+      alert('info',`Carro ${res.model} ya se encuentra añadido en el carrito de compras`);
     }
   };
 
