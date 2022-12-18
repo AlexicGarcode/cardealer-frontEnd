@@ -2,20 +2,6 @@ import { useState, useCallback } from 'react';
 import { UserContext } from "./UserContext"
 import { verifyingTokenService } from "../services/userService";
 
-/*const init = () => {
-  const token = window.localStorage.getItem(process.env.REACT_APP_LOCALSTORAGE);
-
-  const user = {
-    uid: null,
-    name: null
-  }
-
-  return {
-    token,
-    logged: !!token,
-     user
-  }
-}*/
 
 const intialState = {
   uid: null,
@@ -25,7 +11,6 @@ const intialState = {
 
 export const UserProvider = ({ children }) => {
 
-  //const [user, dispatch] = useReducer(authReducer, {}, init);
 
   const [user, setUser] = useState(intialState);
 
@@ -36,24 +21,17 @@ export const UserProvider = ({ children }) => {
       uid: data.user.uid
     });
 
-    /*const action = {
-      type: types.login,
-      payload: userPayload
-    }*/
-
     window.localStorage.setItem(process.env.REACT_APP_LOCALSTORAGE, data.token);
-   // dispatch(action);
-
 
   }
 
   const logout = () => {
     window.localStorage.removeItem(process.env.REACT_APP_LOCALSTORAGE);
-   // const action = { type: types.logout };
-   // dispatch(action);
-    //window.localStorage.clear()
-     setUser({ id: null,
-      name: null});
+
+     setUser({ 
+      id: null,
+      name: null
+    });
   }
 
 
@@ -65,7 +43,6 @@ export const UserProvider = ({ children }) => {
       if (token) {
         const data = await verifyingTokenService();
         window.localStorage.setItem(process.env.REACT_APP_LOCALSTORAGE, token);
-
 
         setUser({
           name: data.user.name,

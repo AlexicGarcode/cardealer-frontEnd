@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import Swal from 'sweetalert2'
 import { putUserService, getUserService } from '../../services/userService';
-import LoadingButton from '../../components/LoadingButton';
+import LoadingButton from '../../components/LoadingButton.jsx';
 import { UserContext } from '../../context/UserContext';
 
 

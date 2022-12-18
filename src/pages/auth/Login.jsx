@@ -3,7 +3,7 @@ import Swal from 'sweetalert2'
 import { UserContext } from "../../context/UserContext";
 import { useNavigate } from 'react-router-dom';
 import { loginService } from '../../services/authService';
-import LoadingButton from '../../components/LoadingButton';
+import LoadingButton from '../../components/LoadingButton.jsx';
 
 function Login() {
   const navigate = useNavigate();
