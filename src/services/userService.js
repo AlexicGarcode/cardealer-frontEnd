@@ -24,3 +24,8 @@ export const verifyingTokenService = async () => {
   const result = await axios.get(`${URL}`, configHeader);  
   return result.data;
 };
+
+export const putUserService = async(uid,data)=>{
+  const resp = await axios.put(`${URL}/${uid}`,  data, configHeader );
+  return resp.data;
+}

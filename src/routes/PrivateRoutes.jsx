@@ -1,10 +1,10 @@
 import { Navigate, Route, Routes} from 'react-router-dom'
 import Home from '../pages/Home'
-import Cars from '../pages/Cars'
+import Cars from '../pages/cars/Cars'
 import NavbarPrivate from '../components/NavbarPrivate'
 import NotFound from '../pages/NotFound'
-import Profile from '../pages/Profile'
-import Cart from '../components/Cart'
+import Profile from '../pages/profile/Profile'
+import Cart from '../pages/Cart'
 
 
 export const PrivateRoutes = () => {
@@ -21,6 +21,5 @@ export const PrivateRoutes = () => {
     </>
   )
 }
-
 
 

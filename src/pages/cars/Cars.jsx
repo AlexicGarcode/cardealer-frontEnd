@@ -1,5 +1,4 @@
 import { useContext, useEffect, useState } from 'react';
-import { NavLink } from "react-router-dom";
 import ModelContext from '../../context/ModelContext';
 import { UserContext } from "../../context/UserContext";
 
@@ -7,13 +6,15 @@ import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import Pagination from 'react-bootstrap/Pagination';
+import './styles-cars.css';
 
 function Cars() {
   let items = [];
   const { user, verifyingToken } = useContext(UserContext);
 
-  const { models, total, total_pages, getModels, addModelCart } = useContext(ModelContext);
+  const { models, total, total_pages, getModels, addModelToCart } = useContext(ModelContext);
   const [limit, setLimit] = useState(9);
+
 
   useEffect(() => {
     verifyingToken();
@@ -25,6 +26,7 @@ function Cars() {
 
 
   const loadPage = (number) => {
+    console.log(number);
     getModels(number, limit);
   }
 
@@ -39,7 +41,7 @@ function Cars() {
 
   return (
     <>
-      <div className="album py-5 bg-light">
+      <div className="album py-5 bg-light animate__animated animate__fadeIn">
         <div className="container">
           <div className="row mb-2">
             <ButtonToolbar
@@ -50,35 +52,37 @@ function Cars() {
               <h5 className='p-2'>{total} resultados</h5>
               <ButtonGroup aria-label="First group">
                 <Button onClick={() => setLimit(9)} variant="secondary">9</Button>{' '}
-                <Button onClick={() => setLimit(15)} variant="secondary">15</Button>{' '}
-                <Button onClick={() => setLimit(45)} variant="secondary">45</Button>{' '}
+                <Button onClick={() => setLimit(18)} variant="secondary">18</Button>{' '}
+                <Button onClick={() => setLimit(32)} variant="secondary">32</Button>{' '}
                 <Button onClick={() => setLimit(100)} variant="secondary">100</Button>
               </ButtonGroup>
             </ButtonToolbar>
 
-            <div className="col">
-              <div className="card shadow-sm">
-                <img
-                  src="https://http2.mlstatic.com/D_NQ_NP_654170-MLM50061959546_052022-O.jpg"
-                  className="d-block w-100"
-                  alt="Honda"
-                />
-                {/* <svg className="bd-placeholder-img card-img-top" width="100%" height={225} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> */}
-                <div className="card-body">
-                  <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div className="d-flex justify-content-between align-items-center">
-                    <div className="btn-group">
-                      <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+            {models.map((model) => (
+              <div className="col-md-6 col-lg-4 mb-2" key={model.uid}>
+                <div className="card shadow-sm">
+                  <img
+                    src={model.imgs[0]}
+                    className="d-block w-100"
+                    alt={model.model}
+                  />
+                  <div className="card-body">
+                    <h3>{model.model}</h3>
+                    <p className="card-text fw-bold">  <span class="badge text-bg-secondary">{model.brand.name}</span> $ {model.price}</p>
+                    <p className="card-text"> {model.description}</p>
+                    <div className="d-flex justify-content-between align-items-center">
+                    {user.uid ?
+                      <div className="btn-group">
+                        <button type="button" onClick={() => addModelToCart(model.uid)} className="btn btn-sm btn-outline-secondary">Agregar</button>
+                      </div>:<></>}
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
+            ))}
 
-
-
+            <Pagination className='justify-content-center mt-2'>{items}</Pagination>
           </div>
         </div>
       </div>
