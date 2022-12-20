@@ -4,23 +4,24 @@ import Usuario2 from '../assets/Charlie.jpg';
 import Usuario3 from '../assets/Valeria.jpg';
 import frontcar from '../assets/frontcar.png';
 import horizon from '../assets/horizon.png';
-import jumbo from '../assets/jumbotron.png';
+
 
 
 const Reviews = (props) => {
   return (
     <>
-    <div class="p-5 mb-4 rounded-3">
-      <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-        <button class="btn btn-primary btn-lg" type="button">Example button</button>
-      </div>
-    </div>
-
       <main role="main">
-      
-      
+        <div class="p-5 mb-4 rounded-3">
+          <div class="container-fluid py-5">
+            <h1 class="display-6 fw-bold">El auto de tus sueños a un click de distancia</h1>
+            <p class="col-md-8 fs-5">
+              La condicion de los autos que tenemos en Toño's Cars es evaluada por nuestro equipo de mecanicos expertos.
+            </p>
+            <button class="btn btn-primary btn-lg" type="button">
+              Quiero ver los autos
+            </button>
+          </div>
+        </div>
 
         {/* Marketing messaging and featurettes
 ================================================== */}
@@ -36,17 +37,12 @@ const Reviews = (props) => {
                 width={140}
                 height={140}
               />
-              <h2>Heading</h2>
+              <h2>Esteban</h2>
               <p>
-                Donec sed odio dui. Etiam porta sem malesuada magna mollis
-                euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                Praesent commodo cursus magna.
+                Obtienes lo que ves, no hay trucos ocultos, el proceso es riguroso pero vale la pena.
               </p>
               <p>
-                <a className="btn btn-secondary" href="/" role="button">
-                  View details »
-                </a>
+                ⭐⭐⭐⭐⭐
               </p>
             </div>
             {/* /.col-lg-4 */}
@@ -58,39 +54,29 @@ const Reviews = (props) => {
                 width={140}
                 height={140}
               />
-              <h2>Heading</h2>
+              <h2>Carlos</h2>
               <p>
-                Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-                eget lacinia odio sem nec elit. Cras mattis consectetur purus
-                sit amet fermentum. Fusce dapibus, tellus ac cursus commodo,
-                tortor mauris condimentum nibh.
+                Siempre he comprado autos de vendedores particulares pero me llevaba sorpresas desagradables. Entonces mi hija me recomendo Toño's Cars y quede asombrado 10/10.
               </p>
               <p>
-                <a className="btn btn-secondary" href="/" role="button">
-                  View details »
-                </a>
+              ⭐⭐⭐⭐⭐
               </p>
             </div>
             {/* /.col-lg-4 */}
             <div className="col-lg-4">
               <img
-                className="rounded-circle"
+                className="rounded-circle ctr"
                 src={Usuario3}
                 alt="a guy"
                 width={140}
                 height={140}
               />
-              <h2>Heading</h2>
+              <h2>Sofia</h2>
               <p>
-                Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-                egestas eget quam. Vestibulum id ligula porta felis euismod
-                semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus.
+                Siempre quise comprar un auto por mi cuenta y casi lo hice pero me alcance a dar cuenta que el vendedor me queria timar, fue cuando decidi usar Toño's Cars, tienen un equipo de asesores y te dan garantia por escrito.
               </p>
               <p>
-                <a className="btn btn-secondary" href="/" role="button">
-                  View details »
-                </a>
+              ⭐⭐⭐⭐⭐
               </p>
             </div>
             {/* /.col-lg-4 */}
@@ -117,7 +103,7 @@ const Reviews = (props) => {
                 data-src={Usuario1}
                 alt="500x500"
                 style={{ width: 500, height: 500 }}
-                src= '.public/img/Charlie.jpg'
+                src=".public/img/Charlie.jpg"
                 data-holder-rendered="true"
               />
             </div>
@@ -175,8 +161,6 @@ const Reviews = (props) => {
           <hr className="featurette-divider" />
           {/* /END THE FEATURETTES */}
         </div>
-        
-        
       </main>
     </>
   );
