@@ -4,6 +4,7 @@ import Usuario2 from '../assets/Charlie.jpg';
 import Usuario3 from '../assets/Valeria.jpg';
 import frontcar from '../assets/frontcar.png';
 import horizon from '../assets/horizon.png';
+import inside from '../assets/inside.png';
 
 
 
@@ -103,7 +104,7 @@ const Reviews = (props) => {
                 data-src={Usuario1}
                 alt="500x500"
                 style={{ width: 500, height: 500 }}
-                src=".public/img/Charlie.jpg"
+                src={inside}
                 data-holder-rendered="true"
               />
             </div>
@@ -112,8 +113,8 @@ const Reviews = (props) => {
           <div className="row featurette">
             <div className="col-md-7 order-md-2">
               <h2 className="featurette-heading">
-                Oh yeah, it's that good.{" "}
-                <span className="text-muted">See for yourself.</span>
+                Comunidad de dueños de automoviles.{" "}
+                <span className="text-muted"></span>
               </h2>
               <p className="lead">
                 Donec ullamcorper nulla non metus auctor fringilla. Vestibulum
@@ -137,8 +138,8 @@ const Reviews = (props) => {
           <div className="row featurette">
             <div className="col-md-7">
               <h2 className="featurette-heading">
-                And lastly, this one.{" "}
-                <span className="text-muted">Checkmate.</span>
+                Pasion por viajar{" "}
+                <span className="text-muted"></span>
               </h2>
               <p className="lead">
                 Donec ullamcorper nulla non metus auctor fringilla. Vestibulum
