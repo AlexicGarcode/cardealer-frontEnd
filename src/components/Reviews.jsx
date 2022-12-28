@@ -14,9 +14,12 @@ const Reviews = (props) => {
       <main role="main">
         <div class="p-5 mb-4 rounded-3">
           <div class="container-fluid py-5">
-            <h1 class="display-6 fw-bold">El auto de tus sueños a un click de distancia</h1>
+            <h1 class="display-6 fw-bold">
+              El auto de tus sueños a un click de distancia
+            </h1>
             <p class="col-md-8 fs-5">
-              La condicion de los autos que tenemos en Toño's Cars es evaluada por nuestro equipo de mecanicos expertos.
+              La condicion de los autos que tenemos en Toño's Cars es evaluada
+              por nuestro equipo de mecanicos expertos.
             </p>
             <button class="btn btn-primary btn-lg" type="button">
               Quiero ver los autos
@@ -40,11 +43,10 @@ const Reviews = (props) => {
               />
               <h2>Esteban</h2>
               <p>
-                Obtienes lo que ves, no hay trucos ocultos, el proceso es riguroso pero vale la pena.
+                Obtienes lo que ves, no hay trucos ocultos, el proceso es
+                riguroso pero vale la pena.
               </p>
-              <p>
-                ⭐⭐⭐⭐⭐
-              </p>
+              <p>⭐⭐⭐⭐⭐</p>
             </div>
             {/* /.col-lg-4 */}
             <div className="col-lg-4">
@@ -57,11 +59,11 @@ const Reviews = (props) => {
               />
               <h2>Carlos</h2>
               <p>
-                Siempre he comprado autos de vendedores particulares pero me llevaba sorpresas desagradables. Entonces mi hija me recomendo Toño's Cars y quede asombrado 10/10.
+                Siempre he comprado autos de vendedores particulares pero me
+                llevaba sorpresas desagradables. Entonces mi hija me recomendo
+                Toño's Cars y quede asombrado 10/10.
               </p>
-              <p>
-              ⭐⭐⭐⭐⭐
-              </p>
+              <p>⭐⭐⭐⭐⭐</p>
             </div>
             {/* /.col-lg-4 */}
             <div className="col-lg-4">
@@ -74,11 +76,12 @@ const Reviews = (props) => {
               />
               <h2>Sofia</h2>
               <p>
-                Siempre quise comprar un auto por mi cuenta y casi lo hice pero me alcance a dar cuenta que el vendedor me queria timar, fue cuando decidi usar Toño's Cars, tienen un equipo de asesores y te dan garantia por escrito.
+                Siempre quise comprar un auto por mi cuenta y casi lo hice pero
+                me alcance a dar cuenta que el vendedor me queria timar, fue
+                cuando decidi usar Toño's Cars, tienen un equipo de asesores y
+                te dan garantia por escrito.
               </p>
-              <p>
-              ⭐⭐⭐⭐⭐
-              </p>
+              <p>⭐⭐⭐⭐⭐</p>
             </div>
             {/* /.col-lg-4 */}
           </div>
@@ -87,15 +90,10 @@ const Reviews = (props) => {
           <hr className="featurette-divider" />
           <div className="row featurette">
             <div className="col-md-7">
-              <h2 className="featurette-heading">
-                First featurette heading.{" "}
-                <span className="text-muted">It'll blow your mind.</span>
-              </h2>
+              <h2 className="featurette-heading">Seguridad de compra </h2>
               <p className="lead">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum
-                id ligula porta felis euismod semper. Praesent commodo cursus
-                magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
-                ac cursus commodo.
+                La unica plataforma en linea en el que los automoviles estan
+                revisados por profesionales automotrices.
               </p>
             </div>
             <div className="col-md-5">
@@ -117,10 +115,10 @@ const Reviews = (props) => {
                 <span className="text-muted"></span>
               </h2>
               <p className="lead">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum
-                id ligula porta felis euismod semper. Praesent commodo cursus
-                magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
-                ac cursus commodo.
+                Zorro no te lo lleves, la verdad es que nunca nos hemos llevado
+                bien con los zorros, coyotes ni nadie que se quiera aprovechar
+                de los demas, es por eso que para entrar a nuestra comunidad
+                hacemos un filtro exhaustivo.
               </p>
             </div>
             <div className="col-md-5 order-md-1">
@@ -138,14 +136,14 @@ const Reviews = (props) => {
           <div className="row featurette">
             <div className="col-md-7">
               <h2 className="featurette-heading">
-                Pasion por viajar{" "}
-                <span className="text-muted"></span>
+                Pasion por viajar <span className="text-muted"></span>
               </h2>
               <p className="lead">
-                Donec ullamcorper nulla non metus auctor fringilla. Vestibulum
-                id ligula porta felis euismod semper. Praesent commodo cursus
-                magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
-                ac cursus commodo.
+                Ya sea que viajes por la ciudad, o que quieras ir a pueblear tu
+                auto es el boleto que te lleva a aquellos destinos deseados, y
+                queremos que lo hagas en el momento que quieras. Es por eso que
+                los autos que encuentras en nuestra plataforma te van a llevar
+                de inicio al lugar de tus sueños.
               </p>
             </div>
             <div className="col-md-5">
