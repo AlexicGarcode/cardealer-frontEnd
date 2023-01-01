@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Swal from 'sweetalert2';
 import { signupService } from '../services/userService';
 import { useNavigate } from 'react-router-dom';
-import LoadingButton from '../components/LoadingButton.jsx';
+import LoadingButton from '../components/LoadingButton';
 
 const SignInForm = () => {
   const navigate = useNavigate();
