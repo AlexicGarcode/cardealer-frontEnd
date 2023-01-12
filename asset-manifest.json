@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/cardealer-frontEnd/static/css/main.6cf65fb8.css",
+    "main.js": "/cardealer-frontEnd/static/js/main.ab36e839.js",
+    "static/media/Chase.jpg": "/cardealer-frontEnd/static/media/Chase.8dd0c854cd112b461e56.jpg",
+    "static/media/Valeria.jpg": "/cardealer-frontEnd/static/media/Valeria.eda50734ec05e49b8ca8.jpg",
+    "static/media/Charlie.jpg": "/cardealer-frontEnd/static/media/Charlie.3dc634850e2598f4cba4.jpg",
+    "static/media/inside.png": "/cardealer-frontEnd/static/media/inside.8b600f9216f74666d022.png",
+    "static/media/horizon.png": "/cardealer-frontEnd/static/media/horizon.c11a768c66af9ed11854.png",
+    "static/media/frontcar.png": "/cardealer-frontEnd/static/media/frontcar.e0cb42947f1d413f56b9.png",
+    "index.html": "/cardealer-frontEnd/index.html",
+    "main.6cf65fb8.css.map": "/cardealer-frontEnd/static/css/main.6cf65fb8.css.map",
+    "main.ab36e839.js.map": "/cardealer-frontEnd/static/js/main.ab36e839.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6cf65fb8.css",
+    "static/js/main.ab36e839.js"
+  ]
+}
