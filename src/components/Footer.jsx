@@ -24,9 +24,9 @@ const Footer = () => {
           }
         </ul>
         <div className='text-center mb-2'>
-          <a href="https://herewecode.io/" target="_blank" rel="noreferrer"><FaFacebookSquare className='icon-footer ' size={30} /></a>
-          <a target="_blank" href="https://herewecode.io/" rel="noreferrer"><FaLinkedinIn className='icon-footer' size={30}/></a>
-          <a target="_blank" href="https://herewecode.io/" rel="noreferrer"><FaTwitter className='icon-footer' size={30}/></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><FaFacebookSquare className='icon-footer ' size={30} /></a>
+          <a target="_blank" href="https://mx.linkedin.com/" rel="noreferrer"><FaLinkedinIn className='icon-footer' size={30}/></a>
+          <a target="_blank" href="https://twitter.com/?lang=es" rel="noreferrer"><FaTwitter className='icon-footer' size={30}/></a>
         </div>
         <p className="text-center text-muted">Copyright © 2022 Toño's cars</p>
       </footer>
