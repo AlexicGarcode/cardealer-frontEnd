@@ -19,7 +19,7 @@ const PaypalCheckoutButton = ({ currency, amount, showSpinner }) => {
         currency: currency,
       },
     });
-  }, [currency, showSpinner]);
+  }, [currency, dispatch, options]);
 
 
 
