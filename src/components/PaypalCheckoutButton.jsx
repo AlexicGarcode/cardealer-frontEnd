@@ -19,11 +19,11 @@ const PaypalCheckoutButton = ({ currency, amount, showSpinner }) => {
         currency: currency,
       },
     });
-  }, [currency, showSpinner, dispatch, options]);
+  }, [currency, showSpinner]);
 
 
 
-  const {  emptyCart } = useContext(ModelContext)
+  const { cart, emptyCart } = useContext(ModelContext)
 
   return (
     <>
