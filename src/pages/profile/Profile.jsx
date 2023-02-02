@@ -33,9 +33,7 @@ function Profile() {
   }
 
 
-  useEffect(() => {
-    getProfile();
-  }, []);
+  
 
   async function getProfile() {
     console.log(user.uid);
@@ -51,6 +49,12 @@ function Profile() {
       )
     }
   }
+
+
+  getProfile();
+  useEffect(() => {
+    
+  }, []);
 
   async function save(event) {
     setIsLoading(true);
