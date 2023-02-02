@@ -19,7 +19,7 @@ const PaypalCheckoutButton = ({ currency, amount, showSpinner }) => {
         currency: currency,
       },
     });
-  }, [currency, showSpinner]);
+  }, [currency, showSpinner, options, dispatch]);
 
 
 
@@ -47,7 +47,7 @@ const PaypalCheckoutButton = ({ currency, amount, showSpinner }) => {
             })
             .then((orderId) => {
 
-              console.log("Orden de compra: " + orderId);
+              console.log("Orden de compra: " + orderId, cart);
               return orderId;
             });
         }}
