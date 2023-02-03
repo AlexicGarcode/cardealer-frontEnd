@@ -11,7 +11,7 @@ export const PublicRoutes = () => {
   return (
     <>
       <Navbar/><Routes>
-        <Route path="home" element={<Home/>}/>
+        <Route path="/home" element={<Home/>}/>
         <Route path="/cars" element={<Cars/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/signin" element={<SignInForm/>}/>

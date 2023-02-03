@@ -12,7 +12,6 @@ export const PrivateRoutes = () => {
     <>
       <NavbarPrivate/><Routes>
         <Route path="home" element={<Home/>}/>
-        <Route path="/cardealer-frontEnd" element={<Home/>}/>
         <Route path="/cars" element={<Cars/>}/>
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/cart" element={<Cart/>}/>
