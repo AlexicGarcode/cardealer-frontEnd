@@ -12,7 +12,7 @@ function App() {
           <ModelProvider>
           <AppRouter />
           </ModelProvider>
-        </PayPalScriptProvider>
+      </PayPalScriptProvider>
       </UserProvider>
     </>
   );
