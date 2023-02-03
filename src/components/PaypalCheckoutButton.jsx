@@ -19,10 +19,12 @@ const PaypalCheckoutButton = ({ currency, amount, showSpinner }) => {
         currency: currency,
       },
     });
-  }, [currency, showSpinner, options, dispatch]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currency, showSpinner]);
 
 
 
+  // eslint-disable-next-line no-unused-vars
   const { cart, emptyCart } = useContext(ModelContext)
 
   return (
@@ -47,7 +49,7 @@ const PaypalCheckoutButton = ({ currency, amount, showSpinner }) => {
             })
             .then((orderId) => {
 
-              console.log("Orden de compra: " + orderId, cart);
+              console.log("Orden de compra: " + orderId);
               return orderId;
             });
         }}

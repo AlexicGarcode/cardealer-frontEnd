@@ -51,9 +51,10 @@ function Profile() {
   }
 
 
-  getProfile();
+  
   useEffect(() => {
-    
+    getProfile();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   async function save(event) {
