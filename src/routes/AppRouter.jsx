@@ -1,5 +1,5 @@
 import {useEffect, useContext} from 'react'
-import { BrowserRouter as Router } from "react-router-dom"
+import { HashRouter as Router } from "react-router-dom"
 import Footer from '../components/Footer'
 import { UserContext } from '../context/UserContext'
 import { PrivateRoutes } from './PrivateRoutes'
